@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:task/constants.dart';
-import 'package:task/core/utilits/CusstomButton.dart';
+import 'package:task/core/utilits/CusstomContanier.dart';
 import 'package:task/features/servers/data/models/AddServerModel.dart';
 import 'package:task/features/servers/persentation/view_model/_Fetch_server_cubit/fetch_server_cubit.dart';
 import 'package:task/features/servers/persentation/view_model/add_server_cubit/add_server_cubit.dart';
@@ -35,7 +35,7 @@ class _AddServerViewState extends State<AddServerView> {
       contentPadding: EdgeInsets.zero,
       titlePadding: EdgeInsets.zero,
       title: DialogTitle(title: widget.title),
-      children: <Widget>[
+      children: [
         Padding(
           padding: const EdgeInsets.all(6),
           child: Padding(

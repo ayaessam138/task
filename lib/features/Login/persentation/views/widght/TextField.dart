@@ -76,20 +76,5 @@ class customtextformfield extends StatelessWidget {
         ],
       ),
     );
-    // return TextFormField(
-    //   focusNode: foucusnode,
-    //   controller: controller,
-    //   validator: valuevaldiation,
-    //   onChanged: onchanged,
-    //   decoration: InputDecoration(
-    //     hintText: hinttext,
-    //     hintStyle: const TextStyle(color: kprimaryColor),
-    //     prefixIcon: prefixicon,
-    //     enabledBorder: const OutlineInputBorder(
-    //         borderSide: BorderSide(width: 0.3, color: kprimaryColor)),
-    //     border: const OutlineInputBorder(
-    //         borderSide: BorderSide(width: 0.3, color: kprimaryColor)),
-    //   ),
-    // );
   }
 }

@@ -4,21 +4,14 @@ import 'package:go_router/go_router.dart';
 import 'package:task/constants.dart';
 import 'package:task/core/utilits/App_Route.dart';
 import 'package:task/core/utilits/Dialog.dart';
-import 'package:task/core/utilits/CusstomButton.dart';
-import 'package:task/core/utilits/bio_metric.dart';
+import 'package:task/core/utilits/CusstomContanier.dart';
 import 'package:task/features/Login/persentation/view_model/cubit/login_cubit.dart';
 import 'package:task/features/Login/persentation/views/fingerprintAuth.dart';
 import 'package:task/features/Login/persentation/views/widght/LoginView_Fields.dart';
 import 'package:task/features/Login/persentation/views/widght/TextField.dart';
 import 'package:task/features/servers/data/models/AddServerModel.dart';
 
-class LoginView extends StatefulWidget {
-  const LoginView({super.key, l});
-  @override
-  State<LoginView> createState() => _LoginViewState();
-}
-
-class _LoginViewState extends State<LoginView> {
+class LoginView extends StatelessWidget {
   GlobalKey<FormState> formkey = GlobalKey();
 
   String? content, Title;
@@ -59,13 +52,6 @@ class _LoginViewState extends State<LoginView> {
             },
           ),
           FingerprintAuthScreen()
-          // IconButton(
-          //     onPressed: () async {
-          //       final isauth = await LocalAuthApi.authenticate();
-          //     },
-          //     icon: Icon(Icons.fingerprint))
-
-          // if (isAuthnticated) Text('auth')
         ]),
       )),
     );
